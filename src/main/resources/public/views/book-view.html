@@ -1,0 +1,27 @@
+<div class="container pad-top">
+  <table class="table librarytable">
+      <tr>
+          <td><h3>Details for {{book.title}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Title</td>
+          <td>{{book.title}}</td>
+      </tr>
+      <tr>
+          <td>Summary</td>
+          <td>{{book.summary}}</td>
+      </tr>
+      <tr>
+          <td>Dur Date</td>
+          <td>{{book.dueDate}}</td>
+      </tr>
+      <tr>
+          <td>Check Out By</td>
+          <td>{{book.checkedOut}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editBook({id:book.id})">Edit</a>
+  </div>
+</div>
